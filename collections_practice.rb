@@ -47,3 +47,20 @@ def count_elements (arr)
   end
   output
 end 
+
+def merge_data(keys, data)
+  output=[]
+  keys.each do |elem|
+    names_key=elem[:first_name]
+      data.each do |people|
+        people.each do |name, info|
+          if names_key==name
+            hash={elem.key(names_key) => names_key}
+            output.push(hash.merge(info))
+          end
+        end
+      end
+    
+  end
+  output
+end
