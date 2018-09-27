@@ -69,7 +69,7 @@ def find_cool(arr)
   arr.each do |elem|
     elem.each do |keys, data|
       if data=="cool"
-        return data
+        return elem
         end
     end
   end
