@@ -64,3 +64,13 @@ def merge_data(keys, data)
   end
   output
 end
+
+def find_cool(arr)
+  arr.each do |elem|
+    elem.each do |keys, data|
+      if data=="cool"
+        return data
+        end
+    end
+  end
+end
